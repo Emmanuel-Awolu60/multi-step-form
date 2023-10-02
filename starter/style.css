@@ -36,7 +36,7 @@ button {
     background: #4bbb7d;
 }
 
-.header{
+.header {
     align-items: center;
     display: flex;
     /* border: 2px solid tomato; */
@@ -46,17 +46,17 @@ button {
     align-content: center;
 }
 
-.container{
+.container {
     /* border: 2px solid black; */
     background: whitesmoke;
+    display: flex;
     border-radius: .5rem;
     width: 70%;
     margin: 0 auto;
     padding: 1rem;
 }
 
-.leftContainer{
-    /* border: 2px solid cornflowerblue; */
+.leftContainer {
     background: url(./assets/images/bg-sidebar-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -67,8 +67,46 @@ button {
     color: #fff;
 }
 
-.leftContainer div h1{
-    border: 2px solid black;
+.leftContainer .textHeader h1 {
+    border: 2px solid white;
+    align-self: center;
+    border-radius: 50%;
+    padding: 0rem .9rem;
+    margin-right: 1.2rem;
+}
+
+.leftContainer .textHeader span:last-child {
+    font-weight: 800;
+    margin-top: 0;
+}
+
+.leftContainer .textHeader div {
+    line-height: normal;
+    align-self: center;
+}
+
+.leftContainer .textHeader div span{
+    color: #aaa0a0;
+}
+
+.leftContainer .textHeader {
     display: flex;
-    border-radius: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.rightContainer{
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+
+.rightContainer{
+    line-height: normal;
+}
+.rightContainer h1{
+    font-size: 2.5rem;
+}
+
+.rightContainer p{
+    color: #857f7f;
+    font-size: 1.2rem;
 }
