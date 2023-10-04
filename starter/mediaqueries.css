@@ -1,0 +1,42 @@
+@media screen and (max-width: 1145px) {
+    .container {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+
+    .header {
+        width: 100%;
+        padding: 0;
+    }
+
+    .leftContainer {
+        width: 100%;
+        display: flex;
+        padding: 0px;
+        justify-content: center;
+        /* border: 2px solid black; */
+        height: 200px;
+        padding: none;
+        border-radius: 0%;
+    }
+
+    .leftContainer h1 {
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+
+    .leftContainer .textHeader div {
+        display: none;
+        margin-top: 0;
+    }
+
+    .rightContainer {
+        width: 100%;
+        border: 2px solid black;
+        position: absolute;
+        left: 0;
+    }
+
+}

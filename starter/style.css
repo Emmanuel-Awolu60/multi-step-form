@@ -13,7 +13,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    color: #444;
+    color: #0a0a42;
     font-weight: 300;
     line-height: 1.9;
     background-color: #f3f3f3;
@@ -47,9 +47,10 @@ button {
     display: flex;
     /* border: 2px solid tomato; */
     background: #c6e6d6;
-    height: 48.2rem;
+    height: 100%;
     width: 100%;
     align-content: center;
+    padding: 91px;
 }
 
 .container {
@@ -57,7 +58,7 @@ button {
     background: whitesmoke;
     display: flex;
     border-radius: .5rem;
-    width: 70%;
+    width: 60vw;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -67,7 +68,7 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    width: 25%;
+    width: 30%;
     border-radius: .8rem;
     padding: 2rem;
     color: #fff;
@@ -130,6 +131,7 @@ button {
     height: 3.2rem;
     border-radius: 10px;
     border: 2px solid gray;
+    margin-top: .5rem;
 }
 
 #form input:active{
