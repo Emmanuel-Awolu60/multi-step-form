@@ -3,6 +3,7 @@
         display: block;
         width: 100%;
         position: relative;
+        padding: 0;
     }
 
     .header {
@@ -15,10 +16,10 @@
         display: flex;
         padding: 0px;
         justify-content: center;
-        /* border: 2px solid black; */
+        position: absolute;
         height: 200px;
         padding: none;
-        border-radius: 0%;
+        border-radius: 0;
     }
 
     .leftContainer h1 {
@@ -33,10 +34,18 @@
     }
 
     .rightContainer {
-        width: 100%;
-        border: 2px solid black;
-        position: absolute;
-        left: 0;
+        width: 80%;
+        margin: 0px auto;
+        position: relative;
+        margin-left: 2.8rem;
+        background-color: whitesmoke;
+        border-radius: 1rem;
+        margin-top: 9rem;
+        padding: 2rem 2rem;
     }
 
+    .btn{
+        position: fixed;
+        margin-right: 0;
+    }
 }

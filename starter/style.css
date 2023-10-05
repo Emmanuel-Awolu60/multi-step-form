@@ -24,6 +24,10 @@ button {
     cursor: pointer;
 }
 
+.hidden {
+    display: none;
+}
+
 .btn {
     background: #0a0a42;
     color: #fff;
@@ -37,10 +41,24 @@ button {
     margin-bottom: 10px;
 }
 
-
-.btn:hover {
-    background: #3838ad;
+.btn-go {
+    background: none;
+    color: #0a0a42;
+    font-size: 1.5rem;
+    border: none;
+    text-align: center;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 0;
 }
+
+
+
+.btnSection{
+    background-color: #0a0a42;
+    width: 100%;
+}
+
 
 .header {
     align-items: center;
@@ -55,7 +73,7 @@ button {
 
 .container {
     /* border: 2px solid black; */
-    background: whitesmoke;
+    background: #f5f5f5;
     display: flex;
     border-radius: .5rem;
     width: 60vw;
@@ -82,6 +100,12 @@ button {
     margin-right: 1.2rem;
 }
 
+
+.leftContainer .textHeader .active {
+    background-color: #98d4b6;
+    border: none;
+}
+
 .leftContainer .textHeader span:last-child {
     font-weight: 800;
     margin-top: 0;
@@ -92,7 +116,7 @@ button {
     align-self: center;
 }
 
-.leftContainer .textHeader div span{
+.leftContainer .textHeader div span {
     color: #aaa0a0;
 }
 
@@ -101,7 +125,7 @@ button {
     margin-bottom: 1.5rem;
 }
 
-.rightContainer{
+.rightContainer {
     margin-left: 5rem;
     margin-top: 2rem;
     line-height: normal;
@@ -109,21 +133,21 @@ button {
 }
 
 
-.rightContainer h1{
+.rightContainer h1 {
     font-size: 2.5rem;
 }
 
-.rightContainer p{
+.rightContainer p {
     color: #857f7f;
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 
-#form{
+#form {
     margin-bottom: 8rem;
 }
 
-#form input{
+#form input {
     display: block;
     margin-bottom: 2rem;
     /* padding: 1rem 5rem; */
@@ -134,33 +158,64 @@ button {
     margin-top: .5rem;
 }
 
-#form input:active{
+#form input:active {
     border: 2px solid gray;
 }
 
- #form input:placeholder-shown{
+#form input:placeholder-shown {
     font-size: 1rem;
     padding: 1rem;
-} 
+}
 
-#form input:focus{
+#form input:focus {
     outline: none;
     border: 2px solid blue;
     padding-left: 10px;
 }
 
-#form input[type="text"]{
+#form input[type="text"] {
     font-size: 1.2rem;
     padding-left: 10px;
 }
-#form input[text="email"]{
+
+#form input[text="email"] {
     font-size: 1.2rem;
 }
 
-#form label{
+#form label {
     margin-bottom: 4rem;
     font-size: 1rem;
     font-weight: 700;
 }
 
+.planSection{
+    display: flex;
+    gap: 25px;
+    width: 100%;
+}
 
+.plans{
+    border: 1px solid #0a0a42;
+    padding: 1.8rem 2rem .5rem .8rem;
+    border-radius: .6rem;
+    width: 8.5rem;
+    height: 10.5rem;
+}
+
+.plans:hover{
+    border: 1px solid #0000ff;
+}
+
+.plans img{
+    margin-bottom: 1.5rem;
+}
+
+.plans h3{
+    margin-bottom: .3rem;
+}
+
+.plans_sw{
+    /* display: block; */
+    margin: 5rem 0;
+
+}

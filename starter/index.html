@@ -15,7 +15,7 @@
             <div class="leftContainer">
 
                 <div class="textHeader">
-                    <h1>1</h1>
+                    <h1 class="active">1</h1>
                     <div>
                         <span>STEP 1</span>
                         <h3>YOUR INFO</h3>
@@ -50,7 +50,7 @@
 
             </div>
 
-            <div class="rightContainer">
+            <div class="rightContainer hidden">
                 <h1>Personal info</h1>
                 <p>Please provide your name, email address and phone number.</p>
 
@@ -62,9 +62,53 @@
                     <label for="phone">Phone No</label>
                     <input type="text" name="" id="" placeholder="+234(0)-807-453-82">
                 </form>
-                <button class="btn">Next Step</button>
+                <div class="btnSection">
+                    <button class="btn-go hidden">Go back</button>
+                    <button class="btn">Next Step</button>
+                </div>
             </div>
-        </div>
+
+
+            <div class="rightContainer">
+                <h1>Select your plan</h1>
+                <p>You have the option of monthly or yearly billing.</p>
+
+                <div class="planSection">
+                    <div class="plans">
+                        <img src="./assets/images/icon-arcade.svg" alt="arcade">
+                        <h3>Arcade</h3>
+                        <span>$9/mo</span>
+                    </div>
+
+                    <div class="planSection">
+                        <div class="plans">
+                            <img src="./assets/images/icon-advanced.svg" alt="arcade">
+                            <h3>Advanced</h3>
+                            <span>$12/mo</span>
+                        </div>
+
+                        <div class="planSection">
+                            <div class="plans">
+                                <img src="./assets/images/icon-pro.svg" alt="arcade">
+                                <h3>Pro</h3>
+                                <span>$15/mo</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="plans_sw">
+                    <span>Monthly</span>
+
+                </div>
+
+                <div class="btnSection">
+                    <button class="btn-go">Go back</button>
+                    <button class="btn">Next Step</button>
+                </div>
+
+            </div>
     </section>
 </body>
 
