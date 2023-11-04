@@ -1,115 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./mediaqueries.css">
-</head>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaqueries.css" />
+  </head>
 
-<body>
+  <body>
     <section class="header">
-        <div class="container">
-            <div class="leftContainer">
+      <div class="container">
+        <div class="leftContainer">
+          <div class="textHeader">
+            <h1 class="active">1</h1>
+            <div>
+              <span>STEP 1</span>
+              <h3>YOUR INFO</h3>
+            </div>
+          </div>
 
-                <div class="textHeader">
-                    <h1 class="active">1</h1>
-                    <div>
-                        <span>STEP 1</span>
-                        <h3>YOUR INFO</h3>
-                    </div>
-                </div>
+          <div class="textHeader">
+            <h1>2</h1>
+            <div>
+              <span>STEP 2</span>
+              <h3>SELECT PLAN</h3>
+            </div>
+          </div>
 
-                <div class="textHeader">
-                    <h1>2</h1>
-                    <div>
-                        <span>STEP 2</span>
-                        <h3>SELECT PLAN</h3>
-                    </div>
-                </div>
+          <div class="textHeader">
+            <h1>3</h1>
+            <div>
+              <span>STEP 3</span>
+              <h3>ADD-ONS</h3>
+            </div>
+          </div>
 
-                <div class="textHeader">
-                    <h1>3</h1>
-                    <div>
-                        <span>STEP 3</span>
-                        <h3>ADD-ONS</h3>
-                    </div>
+          <div class="textHeader">
+            <h1>4</h1>
+            <div>
+              <span>STEP 4</span>
+              <h3>SUMMARY</h3>
+            </div>
+          </div>
+        </div>
 
-                </div>
+        <div class="rightContainer hidden" id="first">
+          <h1>Personal info</h1>
+          <p>Please provide your name, email address and phone number.</p>
 
-                <div class="textHeader">
-                    <h1>4</h1>
-                    <div>
-                        <span>STEP 4</span>
-                        <h3>SUMMARY</h3>
-                    </div>
+          <form action="" id="form">
+            <label for="text">Name</label>
+            <input
+              type="text"
+              class="input"
+              name=""
+              id="name"
+              pattern="[0-10]{11}"
+              required
+              placeholder="eg.Emmanuel Awolu"
+            />
 
-                </div>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              class="input"
+              name=""
+              id="email"
+              required
+              placeholder="eg.emmanuelawolu@gmail.com"
+            />
 
+            <label for="phone">Phone No</label>
+            <input
+              type="text"
+              class="input"
+              name=""
+              id="phone"
+              required
+              placeholder="+234(0)-807-453-82"
+            />
+            <p id="result" class="error"></p>
+          </form>
+          <div class="btnSection">
+            <button class="btn-go hidden">Go back</button>
+            <button class="btn" id="next">Next Step</button>
+          </div>
+        </div>
+
+        <div class="rightContainer hidden" id="second">
+          <h1>Select your plan</h1>
+          <p>You have the option of monthly or yearly billing.</p>
+
+          <div class="planSection">
+            <div class="plans">
+              <img src="./assets/images/icon-arcade.svg" alt="arcade" />
+              <h3>Arcade</h3>
+              <span>$9/mo</span>
             </div>
 
-            <div class="rightContainer hidden">
-                <h1>Personal info</h1>
-                <p>Please provide your name, email address and phone number.</p>
+            <div class="planSection">
+              <div class="plans">
+                <img src="./assets/images/icon-advanced.svg" alt="arcade" />
+                <h3>Advanced</h3>
+                <span>$12/mo</span>
+              </div>
 
-                <form action="" id="form">
-                    <label for="text">Name</label>
-                    <input type="text" name="" id="" placeholder="eg.Emmanuel Awolu">
-                    <label for="email">Email</label>
-                    <input type="email" name="" id="" placeholder="eg.emmanuelawolu@gmail.com">
-                    <label for="phone">Phone No</label>
-                    <input type="text" name="" id="" placeholder="+234(0)-807-453-82">
-                </form>
-                <div class="btnSection">
-                    <button class="btn-go hidden">Go back</button>
-                    <button class="btn">Next Step</button>
+              <div class="planSection">
+                <div class="plans">
+                  <img src="./assets/images/icon-pro.svg" alt="arcade" />
+                  <h3>Pro</h3>
+                  <span>$15/mo</span>
                 </div>
+              </div>
             </div>
+          </div>
 
-
-            <div class="rightContainer">
-                <h1>Select your plan</h1>
-                <p>You have the option of monthly or yearly billing.</p>
-
-                <div class="planSection">
-                    <div class="plans">
-                        <img src="./assets/images/icon-arcade.svg" alt="arcade">
-                        <h3>Arcade</h3>
-                        <span>$9/mo</span>
-                    </div>
-
-                    <div class="planSection">
-                        <div class="plans">
-                            <img src="./assets/images/icon-advanced.svg" alt="arcade">
-                            <h3>Advanced</h3>
-                            <span>$12/mo</span>
-                        </div>
-
-                        <div class="planSection">
-                            <div class="plans">
-                                <img src="./assets/images/icon-pro.svg" alt="arcade">
-                                <h3>Pro</h3>
-                                <span>$15/mo</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- <div class="plans_sw">
+          <!-- <div class="switchPlans">
                     <span>Monthly</span>
-
+                    <input type="checkbox" id="switch">
+                    <label for="switch"></label>
                 </div> -->
 
-                <div class="btnSection">
-                    <button class="btn-go">Go back</button>
-                    <button class="btn">Next Step</button>
-                </div>
+          <div class="btnSection">
+            <button class="btn-go">Go back</button>
+            <button class="btn">Next Step</button>
+          </div>
+        </div>
 
-            </div>
+        <div class="rightContainer" id="third">
+          <h1>Pick add-ons</h1>
+          <p>Double-check everything looks OK before confirming.</p>
+          <div class="arcade">
+            <h3>Arcade(Monthly)</h3>
+            <samp>$9/mo</samp>
+          </div>
+
+          <div class="online">
+            <h3>Online service</h3>
+            <samp>+$1/mo</samp>
+          </div>
+
+          <div class="larger">
+            <h3>Larger storage</h3>
+            <samp>+$2/mo</samp>
+          </div>
+
+          <div class="total">
+            <h3>Total</h3>
+            <samp>+$12/mo</samp>
+          </div>
+          <div class="btnSection">
+            <button class="btn-go">Go back</button>
+            <button class="btn" id="next">Next Step</button>
+          </div>
+        </div>
+      </div>
     </section>
-</body>
-
+    <script src="./main.js"></script>
+  </body>
 </html>
