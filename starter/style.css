@@ -30,7 +30,7 @@ button {
     display: none;
 }
 
-.btn {
+/* .btn {
     background: #0a0a42;
     color: #fff;
     padding: 1rem 2.2rem;
@@ -43,7 +43,7 @@ button {
     margin-bottom: 10px;
 }
 
-.btn-go {
+.btn-prev {
     background: none;
     color: #0a0a42;
     font-size: 1.5rem;
@@ -52,16 +52,36 @@ button {
     margin-bottom: 10px;
     position: absolute;
     bottom: 0;
+} */
+
+#btnSection {
+    width: 100%;
+    display: block;
+    position: relative;
+    justify-content: space-between;
+}
+
+.btn-next{
+    border: none;
+    background: #0a0a42;
+    color: #fff;
+    padding: 1rem 2.2rem;
+    border-radius: .6rem;
+    font-size: 1rem;
+    margin-left: 15rem;
+}
+
+.btn-prev{
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    color: #0a0a42;
 }
 
 .error {
     color: red;
 }
 
-.btnSection {
-    background-color: #0a0a42;
-    width: 100%;
-}
 
 
 .header {
@@ -149,6 +169,7 @@ button {
     margin-bottom: 2rem;
 }
 
+
 #form {
     margin-bottom: 8rem;
 }
@@ -225,6 +246,10 @@ button {
     /* display: block; */
     margin: 5rem 0;
 
+}
+
+.pick{
+    margin-bottom: 4rem;
 }
 
 .pick{
