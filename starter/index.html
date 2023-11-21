@@ -13,7 +13,7 @@
       <div class="container">
         <div class="leftContainer">
           <div class="textHeader">
-            <h1 class="active">1</h1>
+            <button class="active step-btn" onclick="handleform(event, 'first')" >1</button>
             <div>
               <span>STEP 1</span>
               <h3>YOUR INFO</h3>
@@ -21,23 +21,23 @@
           </div>
 
           <div class="textHeader">
-            <h1>2</h1>
+            <button class="step-btn" onclick="handleform(event, 'second')" >2</button>
             <div>
-              <span>STEP 2</span>
+              <span >STEP 2</span>
               <h3>SELECT PLAN</h3>
             </div>
           </div>
 
           <div class="textHeader">
-            <h1>3</h1>
+            <button class="step-btn" onclick="handleform(event, 'third')" >3</button>
             <div>
-              <span>STEP 3</span>
+              <span >STEP 3</span>
               <h3>ADD-ONS</h3>
             </div>
           </div>
 
           <div class="textHeader">
-            <h1>4</h1>
+            <button class="step-btn" onclick="handleform(event, 'fouth')" >4</button>
             <div>
               <span>STEP 4</span>
               <h3>SUMMARY</h3>
@@ -84,7 +84,7 @@
           </form>
           <div id="btnSection">
             <button class="btn-prev hidden">Go back</button>
-            <button class="btn-next" id="next">Next Step</button>
+            <button class="btn-next" onclick="handleform()" id="next">Next Step</button>
           </div>
         </div>
 
@@ -123,8 +123,8 @@
                 </div> -->
 
           <div id="btnSection">
-            <button class="btn-prev">Go back</button>
-            <button class="btn-next" id="next">Next Step</button>
+            <button class="btn-prev" >Go back</button>
+            <button class="btn-next" onclick="handleform()" >Next Step</button>
           </div>
         </div>
 
@@ -161,12 +161,12 @@
           </div>
 
           <div id="btnSection">
-            <button class="btn-prev">Go back</button>
-            <button class="btn-next" id="next">Next Step</button>
+            <button class="btn-prev" >Go back</button>
+            <button class="btn-next" onclick="handleform()" >Next Step</button>
           </div>
         </div>
 
-        <!-- <div class="rightContainer" id="">
+        <div class="rightContainer hidden" id="fouth">
           <h1></h1>
           <p>Double-check everything looks OK before confirming.</p>
           <div class="arcade">
@@ -190,9 +190,9 @@
           </div>
           <div id="btnSection">
             <button class="btn-prev">Go back</button>
-            <button class="btn-next" id="next">Next Step</button>
+            <button class="btn-next" onclick="handleform()" >Next Step</button>
           </div>
-        </div> -->
+        </div>
       </div>
     </section>
     <script src="./main.js"></script>

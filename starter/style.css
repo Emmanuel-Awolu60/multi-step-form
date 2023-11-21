@@ -118,11 +118,11 @@ button {
     color: #fff;
 }
 
-.leftContainer > .textHeader > h1 {
+.leftContainer > .textHeader > button {
     border: 2px solid white;
     align-self: center;
     border-radius: 50%;
-    padding: 0rem .9rem;
+    padding: .8rem 1rem;
     margin-right: 1.2rem;
 }
 
@@ -156,6 +156,7 @@ button {
     margin-top: 2rem;
     line-height: normal;
     position: relative;
+    /* display:none; */
 }
 
 
