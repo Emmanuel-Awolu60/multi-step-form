@@ -9,11 +9,10 @@
   </head>
 
   <body>
-    <section class="header">
       <div class="container">
         <div class="leftContainer">
           <div class="textHeader">
-            <button class="active step-btn" onclick="handleform(event, 'first')" >1</button>
+            <button class="step-btn" onclick="handleform(event, 'rit-1')" >1</button>
             <div>
               <span>STEP 1</span>
               <h3>YOUR INFO</h3>
@@ -21,23 +20,23 @@
           </div>
 
           <div class="textHeader">
-            <button class="step-btn" onclick="handleform(event, 'second')" >2</button>
+            <button class="step-btn" onclick="handleform(event, 'rit-2')">2</button>
             <div>
-              <span >STEP 2</span>
+              <span>STEP 2</span>
               <h3>SELECT PLAN</h3>
             </div>
           </div>
 
           <div class="textHeader">
-            <button class="step-btn" onclick="handleform(event, 'third')" >3</button>
+            <button class="step-btn" onclick="handleform(event, 'rit-3')">3</button>
             <div>
-              <span >STEP 3</span>
+              <span>STEP 3</span>
               <h3>ADD-ONS</h3>
             </div>
           </div>
 
           <div class="textHeader">
-            <button class="step-btn" onclick="handleform(event, 'fouth')" >4</button>
+            <button class="step-btn" onclick="handleform(event, 'rit-4')">4</button>
             <div>
               <span>STEP 4</span>
               <h3>SUMMARY</h3>
@@ -45,7 +44,8 @@
           </div>
         </div>
 
-        <div class="rightContainer" id="first">
+        <!-- * Step 1 start -->
+        <div class="rightContainer" id="rit-1">
           <h1>Personal info</h1>
           <p>Please provide your name, email address and phone number.</p>
 
@@ -83,12 +83,13 @@
             <p id="result" class="error"></p>
           </form>
           <div id="btnSection">
-            <button class="btn-prev hidden">Go back</button>
-            <button class="btn-next" onclick="handleform()" id="next">Next Step</button>
+            <button class="btn-next" type="submit">Next Step</button>
           </div>
         </div>
+        <!-- * Step 1 end -->
 
-        <div class="rightContainer hidden" id="second">
+        <!-- * Step 2 start -->
+        <div class="rightContainer" id="rit-2">
           <h1>Select your plan</h1>
           <p>You have the option of monthly or yearly billing.</p>
 
@@ -115,20 +116,20 @@
               </div>
             </div>
           </div>
-
+          <div id="btnSection">
+            <button class="btn-prev" type="button">Go back</button>
+            <button class="btn-next" type="submit">Next Step</button>
+          </div>
           <!-- <div class="switchPlans">
                     <span>Monthly</span>
                     <input type="checkbox" id="switch">
                     <label for="switch"></label>
                 </div> -->
-
-          <div id="btnSection">
-            <button class="btn-prev" >Go back</button>
-            <button class="btn-next" onclick="handleform()" >Next Step</button>
-          </div>
         </div>
+        <!-- * Step 2 end -->
 
-        <div class="rightContainer hidden" id="third">
+        <!-- * Step 3 start -->
+        <div class="rightContainer" id="rit-3">
           <h1>Pick add-ons</h1>
           <p>Add-ons help enhance your gaming experience.</p>
 
@@ -159,14 +160,15 @@
 
             <p>Custom theme on you profile</p>
           </div>
-
           <div id="btnSection">
-            <button class="btn-prev" >Go back</button>
-            <button class="btn-next" onclick="handleform()" >Next Step</button>
+            <button class="btn-prev" type="button">Go back</button>
+            <button class="btn-next" type="submit">Next Step</button>
           </div>
         </div>
+        <!-- * Step 3 end -->
 
-        <div class="rightContainer hidden" id="fouth">
+        <!-- * Step 4 start -->
+        <div class="rightContainer" id="rit-4">
           <h1></h1>
           <p>Double-check everything looks OK before confirming.</p>
           <div class="arcade">
@@ -189,12 +191,12 @@
             <samp>+$12/mo</samp>
           </div>
           <div id="btnSection">
-            <button class="btn-prev">Go back</button>
-            <button class="btn-next" onclick="handleform()" >Next Step</button>
+            <button class="btn-prev" type="button">Go back</button>
+            <button class="btn-next" type="submit">Next Step</button>
           </div>
         </div>
+        <!-- * Step 4 end -->
       </div>
-    </section>
     <script src="./main.js"></script>
   </body>
 </html>

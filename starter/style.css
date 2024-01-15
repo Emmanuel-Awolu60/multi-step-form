@@ -13,13 +13,15 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    color: #0a0a42;
     font-weight: 300;
     line-height: 1.9;
-    background-color: #c6e6d6;
     scroll-behavior: smooth;
     display: flex;
     position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button {
@@ -54,24 +56,97 @@ button {
     bottom: 0;
 } */
 
+.container {
+    display: flex;
+    border-radius: 1rem;
+    /* width: 60vw; */
+    background: #dff4fc;
+    margin: 0 auto;
+    padding: 1rem;
+    position: relative;
+}
+
+.leftContainer {
+    background: url(./assets/images/bg-sidebar-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    /* width: 30%; */
+    border-radius: .8rem;
+    padding: 2rem;
+    color: #fff;
+}
+
+.leftContainer>.textHeader>button {
+    border: 2px solid white;
+    align-self: center;
+    border-radius: 50%;
+    padding: .8rem 1rem;
+    margin-right: 1.2rem;
+}
+
+
+.leftContainer>.textHeader>.active {
+    background-color: #98d4b6;
+    border: none;
+}
+
+.leftContainer>.textHeader>span:last-child {
+    font-weight: 800;
+    margin-top: 0;
+}
+
+.leftContainer .textHeader>div {
+    line-height: normal;
+    align-self: center;
+}
+
+.leftContainer>.textHeader>div>span {
+    color: #aaa0a0;
+}
+
+.leftContainer>.textHeader {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.rightContainer {
+    display: none;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    line-height: normal;
+    /* position: relative; */
+}
+
+.rightContainer>h1 {
+    font-size: 2.5rem;
+}
+
+.rightContainer>p {
+    color: #857f7f;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/***** BUTTON SECTION *****/
 #btnSection {
     width: 100%;
-    display: block;
-    position: relative;
+    display: flex;
+    right: 0px;
     justify-content: space-between;
 }
 
-.btn-next{
+.btn-next {
     border: none;
     background: #0a0a42;
     color: #fff;
     padding: 1rem 2.2rem;
     border-radius: .6rem;
     font-size: 1rem;
-    margin-left: 15rem;
+    /* margin-left: 15rem; */
 }
 
-.btn-prev{
+.btn-prev {
     border: none;
     background: none;
     font-size: 1.2rem;
@@ -81,101 +156,13 @@ button {
 .error {
     color: red;
 }
-
-
-
-.header {
-    display: flex;
-    background: #c6e6d6;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    /* position: absolute; */
-    justify-content: center;
-    align-content: center;
-    margin-top: 25px;
-    /* padding: 91px; */
-}
-
-.container {
-    background: #f5f5f5;
-    display: flex;
-    border-radius: .5rem;
-    width: 60vw;
-    margin: 0 auto;
-    padding: 1rem;
-}
-
-
-.leftContainer {
-    background: url(./assets/images/bg-sidebar-desktop.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    width: 30%;
-    border-radius: .8rem;
-    padding: 2rem;
-    color: #fff;
-}
-
-.leftContainer > .textHeader > button {
-    border: 2px solid white;
-    align-self: center;
-    border-radius: 50%;
-    padding: .8rem 1rem;
-    margin-right: 1.2rem;
-}
-
-
-.leftContainer > .textHeader > .active {
-    background-color: #98d4b6;
-    border: none;
-}
-
-.leftContainer > .textHeader > span:last-child {
-    font-weight: 800;
-    margin-top: 0;
-}
-
-.leftContainer .textHeader > div {
-    line-height: normal;
-    align-self: center;
-}
-
-.leftContainer > .textHeader > div > span {
-    color: #aaa0a0;
-}
-
-.leftContainer > .textHeader {
-    display: flex;
-    margin-bottom: 1.5rem;
-}
-
-.rightContainer {
-    margin-left: 5rem;
-    margin-top: 2rem;
-    line-height: normal;
-    position: relative;
-    /* display:none; */
-}
-
-
-.rightContainer > h1 {
-    font-size: 2.5rem;
-}
-
-.rightContainer > p {
-    color: #857f7f;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
+/***** BUTTON SECTION *****/
 
 #form {
     margin-bottom: 8rem;
 }
 
-#form > input {
+#form>input {
     display: block;
     margin-bottom: 2rem;
     /* padding: 1rem 5rem; */
@@ -186,31 +173,31 @@ button {
     margin-top: .5rem;
 }
 
-#form > input:active {
+#form>input:active {
     border: 2px solid gray;
 }
 
-#form > input:placeholder-shown {
+#form>input:placeholder-shown {
     font-size: 1rem;
     padding: 1rem;
 }
 
-#form > input:focus {
+#form>input:focus {
     outline: none;
     border: 2px solid blue;
     padding-left: 10px;
 }
 
-#form > input[type="text"] {
+#form>input[type="text"] {
     font-size: 1.2rem;
     padding-left: 10px;
 }
 
-#form > input[text="email"] {
+#form>input[text="email"] {
     font-size: 1.2rem;
 }
 
-#form > label {
+#form>label {
     margin-bottom: 4rem;
     font-size: 1rem;
     font-weight: 700;
@@ -235,11 +222,11 @@ button {
     border: 1px solid #0000ff;
 }
 
-.plans > img {
+.plans>img {
     margin-bottom: 1.5rem;
 }
 
-.plans > h3 {
+.plans>h3 {
     margin-bottom: .3rem;
 }
 
@@ -249,11 +236,11 @@ button {
 
 }
 
-.pick{
+.pick {
     margin-bottom: 4rem;
 }
 
-.pick{
+.pick {
     /* display: flex; */
     justify-content: center;
     margin-bottom: 20px;
@@ -262,22 +249,23 @@ button {
     border-radius: 10px;
 }
 
-.pick > div{
+.pick>div {
     display: flex;
 }
 
-.pick > div > h3{
+.pick>div>h3 {
     margin-left: 20px;
 }
 
-.pick > div > span{
+.pick>div>span {
     margin-left: 10rem;
 }
 
-.pick p{
+.pick p {
     margin-left: 32px;
-    
+
 }
+
 /* .online,
 .larger,
 .total,
@@ -287,6 +275,6 @@ button {
     justify-content: space-between;
 } */
 
-.arcade{
+.arcade {
     border-bottom: 2px solid tomato;
 }
