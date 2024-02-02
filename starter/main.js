@@ -11,7 +11,11 @@ function handleform(event, idname) {
   for (let i = 0; i < allBtn.length; i++) {
     allBtn[i].className = allBtn[i].className.replace(" active", "");
   }
-  
+
   document.getElementById(idname).style.display = "block";
   event.currentTarget.className += " active";
 }
+
+const btnNext = document.querySelectorAll(".btn-next");
+
+
